@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const Navigation = () => {
+const Header = () => {
   const classes = useStyles()
 
   return (
@@ -42,4 +42,4 @@ const Navigation = () => {
   )
 }
 
-export default Navigation
+export default Header

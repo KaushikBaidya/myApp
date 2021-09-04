@@ -2,7 +2,6 @@ import React from 'react'
 import {
   CssBaseline,
   Container,
-  Typography,
   Grid,
   Button,
   Divider,
@@ -13,7 +12,6 @@ import Auth from '../Auth'
 const useStyles = makeStyles((theme) => ({
   heroContent: {
     backgroundColor: '#ffffff',
-    padding: theme.spacing(8, 0, 6),
   },
   heroButtons: {
     marginTop: theme.spacing(4),
@@ -23,23 +21,14 @@ const useStyles = makeStyles((theme) => ({
   },
 }))
 
-const Content = () => {
+const Main = (props) => {
   const classes = useStyles()
   return (
     <React.Fragment>
       <CssBaseline />
       <div className={classes.heroContent}>
         <Container maxWidth="lg">
-          <Typography
-            component="h1"
-            variant="h2"
-            align="center"
-            color="textPrimary"
-            gutterBottom
-          >
-            This Is MYAPP
-          </Typography>
-          <Auth />
+          {props.children}
 
           <Divider className={classes.divider} />
           <div className={classes.heroButtons}>
@@ -57,4 +46,4 @@ const Content = () => {
   )
 }
 
-export default Content
+export default Main
