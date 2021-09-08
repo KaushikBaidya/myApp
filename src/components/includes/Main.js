@@ -7,7 +7,6 @@ import {
   Divider,
 } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import Auth from '../Auth'
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
