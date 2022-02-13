@@ -117,7 +117,7 @@ export default function RecipeReviewCard() {
                     Pellentesque.
                   </Typography>
                   <p style={{ textAlign: 'left', color: 'gray' }}>
-                    posted 1 minute ago
+                    posted 1 minute agos
                   </p>
                 </Grid>
               </Grid>
